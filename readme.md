@@ -19,7 +19,6 @@ WP Scroll Customizer permet de personnaliser la barre de défilement de votre si
 - Appliquez un rayon aux bordures de la barre.
 - Interface conviviale et intuitive.
 - Prévisualisation en temps réel des changements.
-- Compatible avec les navigateurs modernes.
 
 ## Installation
 
