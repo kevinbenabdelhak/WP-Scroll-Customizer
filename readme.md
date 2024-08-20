@@ -12,6 +12,8 @@
 
 WP Scroll Customizer permet de personnaliser la barre de défilement de votre site WordPress. Ce plugin offre des options pour ajuster les couleurs, les dégradés et les styles de la barre de défilement pour qu'elle corresponde au design de votre site.
 
+[![Voir le tutoriel](https://img.youtube.com/vi/uba6vgDXqJ0/maxresdefault.jpg)](https://www.youtube.com/watch?v=uba6vgDXqJ0)
+
 ## Features
 
 - Personnalisez la couleur et le dégradé de la barre de défilement.
