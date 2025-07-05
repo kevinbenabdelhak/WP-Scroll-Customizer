@@ -1,0 +1,26 @@
+/* Custom admin styles for WP Scroll Customizer */
+.nav-tab-wrapper {
+    margin-bottom: 20px;
+}
+
+.scrollbar-width-value,
+.scrollbar-border-radius-value {
+    font-weight: bold;
+}
+
+input.scrollbar-width-range,
+input.scrollbar-border-radius-range {
+    margin-right: 10px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: middle;
+}
+input[type="text"].my-color-picker {
+    width:100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+form{
+    padding-top: 20px;
+}
