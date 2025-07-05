@@ -34,7 +34,10 @@ WP Scroll Customizer permet de personnaliser la barre de défilement de votre si
 
 Si vous avez des questions ou des problèmes, veuillez contacter l'auteur à [kevin-benabdelhak.fr](https://kevin-benabdelhak.fr).
 
-## Changelog
+## MAJ
 
 ### 1.0
-- Première version du plugin.
+- Page d’option pour insérer la clé API product fetcher et la clé api openai
+- Option pour activer la réécriture, le titre, l’import du prix
+- Metabox dans les pages produits pour insérer une URL et scraper le contenu
+- Insère automatiquement les données en AJAX dans la page
