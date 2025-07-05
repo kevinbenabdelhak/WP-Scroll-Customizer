@@ -37,7 +37,7 @@ Si vous avez des questions ou des problèmes, veuillez contacter l'auteur à [ke
 ## MAJ
 
 ### 1.0
-- Page d’option pour insérer la clé API product fetcher et la clé api openai
-- Option pour activer la réécriture, le titre, l’import du prix
-- Metabox dans les pages produits pour insérer une URL et scraper le contenu
-- Insère automatiquement les données en AJAX dans la page
+- Modifier le fond
+- Modifier la couleur de la barre
+- Choisir entre couleur ou dégradé
+- Prévisualisation en direct
