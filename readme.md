@@ -5,6 +5,7 @@
 **Requires at least:** 5.0  
 **Tested up to:** 6.5.3  
 **Requires PHP:** 7.0  
+**Stable tag:** 1.1    
 **License:** GPL v2 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,7 +37,11 @@ Si vous avez des questions ou des problèmes, veuillez contacter l'auteur à [ke
 
 ## MAJ
 
-### 1.0
+### 1.1  
+- Ajout d'une troisième couleur + personnalisation du dégradé (angle, inverser..)
+
+
+### 1.0  
 - Modifier le fond
 - Modifier la couleur de la barre
 - Choisir entre couleur ou dégradé
