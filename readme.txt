@@ -4,6 +4,7 @@ Tags: scroll, customizer, colors, gradients, scrollbar
 Requires at least: 5.0
 Tested up to: 6.5.3
 Requires PHP: 7.0
+Stable tag: 1.1
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,7 +34,10 @@ WP Scroll Customizer permet de personnaliser la barre de défilement de votre si
 Si vous avez des questions ou des problèmes, veuillez contacter l'auteur à [kevin-benabdelhak.fr](https://kevin-benabdelhak.fr).
 
 
-== Changelog ==
+== MAJ ==
+
+= 1.1 =
+* Ajout d'une troisième couleur + personnalisation du dégradé (angle, inverser..)
 
 = 1.0 =
 * Première version du plugin.

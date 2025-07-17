@@ -4,7 +4,6 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-
 function wp_scroll_customizer_options_page() {
     ?>
     <div class="wrap">

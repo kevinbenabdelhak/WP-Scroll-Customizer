@@ -4,7 +4,6 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-
 function wp_scroll_customizer_scrollbar_color_or_gradient_render() {
     $options = get_option('wp_scroll_settings');
     ?>
@@ -30,11 +29,43 @@ function wp_scroll_customizer_scrollbar_gradient_color_start_render() {
     <?php
 }
 
+// AJOUT couleur mid
+function wp_scroll_customizer_scrollbar_gradient_color_mid_render() {
+    $options = get_option('wp_scroll_settings');
+    ?>
+    <input type='text' name='wp_scroll_settings[scrollbar_gradient_color_mid]' value='<?php echo esc_attr($options['scrollbar_gradient_color_mid'] ?? ''); ?>' class="my-color-picker" />
+    <label> Intermédiaire (optionnel) </label>
+    <?php
+}
+
 function wp_scroll_customizer_scrollbar_gradient_color_end_render() {
     $options = get_option('wp_scroll_settings');
     ?>
     <input type='text' name='wp_scroll_settings[scrollbar_gradient_color_end]' value='<?php echo esc_attr($options['scrollbar_gradient_color_end'] ?? '#0000ff'); ?>' class="my-color-picker" />
     <label> Fin </label>
+    <?php
+}
+
+// AJOUT orientation gradient
+function wp_scroll_customizer_scrollbar_gradient_orientation_render() {
+    $options = get_option('wp_scroll_settings');
+    $value = $options['scrollbar_gradient_orientation'] ?? 'to bottom';
+    ?>
+    <select name="wp_scroll_settings[scrollbar_gradient_orientation]" id="scrollbar_gradient_orientation">
+        <option value="to bottom" <?php selected($value, 'to bottom'); ?>>Vertical</option>
+        <option value="to right" <?php selected($value, 'to right'); ?>>Horizontal</option>
+        <option value="135deg" <?php selected($value, '135deg'); ?>>Diagonal principale (135°)</option>
+        <option value="45deg" <?php selected($value, '45deg'); ?>>Diagonal inverse (45°)</option>
+    </select>
+    <?php
+}
+
+// Ajout bouton reverse (checkbox)
+function wp_scroll_customizer_scrollbar_gradient_reversed_render() {
+    $options = get_option('wp_scroll_settings');
+    ?>
+    <input type='checkbox' name='wp_scroll_settings[scrollbar_gradient_reversed]' id='scrollbar_gradient_reversed' value='1' <?php checked(!empty($options['scrollbar_gradient_reversed'])); ?> />
+    <label for="scrollbar_gradient_reversed">Inverser</label>
     <?php
 }
 
@@ -79,10 +110,39 @@ function wp_scroll_customizer_background_gradient_color_start_render() {
     <?php
 }
 
+function wp_scroll_customizer_background_gradient_color_mid_render() {
+    $options = get_option('wp_scroll_settings');
+    ?>
+    <input type='text' name='wp_scroll_settings[background_gradient_color_mid]' value='<?php echo esc_attr($options['background_gradient_color_mid'] ?? ''); ?>' class="my-color-picker" />
+    <label> Intermédiaire (optionnel) </label>
+    <?php
+}
+
 function wp_scroll_customizer_background_gradient_color_end_render() {
     $options = get_option('wp_scroll_settings');
     ?>
     <input type='text' name='wp_scroll_settings[background_gradient_color_end]' value='<?php echo esc_attr($options['background_gradient_color_end'] ?? '#0000ff'); ?>' class="my-color-picker" />
     <label> Fin </label>
+    <?php
+}
+
+function wp_scroll_customizer_background_gradient_orientation_render() {
+    $options = get_option('wp_scroll_settings');
+    $value = $options['background_gradient_orientation'] ?? 'to bottom';
+    ?>
+    <select name="wp_scroll_settings[background_gradient_orientation]" id="background_gradient_orientation">
+        <option value="to bottom" <?php selected($value, 'to bottom'); ?>>Vertical</option>
+        <option value="to right" <?php selected($value, 'to right'); ?>>Horizontal</option>
+        <option value="135deg" <?php selected($value, '135deg'); ?>>Diagonal principale (135°)</option>
+        <option value="45deg" <?php selected($value, '45deg'); ?>>Diagonal inverse (45°)</option>
+    </select>
+    <?php
+}
+
+function wp_scroll_customizer_background_gradient_reversed_render() {
+    $options = get_option('wp_scroll_settings');
+    ?>
+    <input type='checkbox' name='wp_scroll_settings[background_gradient_reversed]' id='background_gradient_reversed' value='1' <?php checked(!empty($options['background_gradient_reversed'])); ?> />
+    <label for="background_gradient_reversed">Inverser</label>
     <?php
 }

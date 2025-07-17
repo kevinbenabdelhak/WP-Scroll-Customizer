@@ -4,7 +4,6 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-
 function wp_scroll_customizer_settings_init() {
     register_setting('wpScrollCustomizer', 'wp_scroll_settings');
 
@@ -39,11 +38,34 @@ function wp_scroll_customizer_settings_init() {
         'wpScrollCustomizer_bar',
         'wp_scroll_customizer_section_bar'
     );
+    // MID
+    add_settings_field(
+        'scrollbar_gradient_color_mid',
+        __('Couleur intermédiaire dégradé de la barre de défilement', 'wp_scroll_customizer'),
+        'wp_scroll_customizer_scrollbar_gradient_color_mid_render',
+        'wpScrollCustomizer_bar',
+        'wp_scroll_customizer_section_bar'
+    );
 
     add_settings_field(
         'scrollbar_gradient_color_end',
         __('Couleur de fin du dégradé de la barre de défilement', 'wp_scroll_customizer'),
         'wp_scroll_customizer_scrollbar_gradient_color_end_render',
+        'wpScrollCustomizer_bar',
+        'wp_scroll_customizer_section_bar'
+    );
+    // Orientation
+    add_settings_field(
+        'scrollbar_gradient_orientation',
+        __('Orientation du dégradé', 'wp_scroll_customizer'),
+        'wp_scroll_customizer_scrollbar_gradient_orientation_render',
+        'wpScrollCustomizer_bar',
+        'wp_scroll_customizer_section_bar'
+    );
+    add_settings_field(
+        'scrollbar_gradient_reversed',
+        __('Inverser le dégradé', 'wp_scroll_customizer'),
+        'wp_scroll_customizer_scrollbar_gradient_reversed_render',
         'wpScrollCustomizer_bar',
         'wp_scroll_customizer_section_bar'
     );
@@ -63,7 +85,6 @@ function wp_scroll_customizer_settings_init() {
         'wpScrollCustomizer_bar',
         'wp_scroll_customizer_section_bar'
     );
-
     // Section pour le fond
     add_settings_section(
         'wp_scroll_customizer_section_background',
@@ -95,11 +116,33 @@ function wp_scroll_customizer_settings_init() {
         'wpScrollCustomizer_background',
         'wp_scroll_customizer_section_background'
     );
+    // MID
+    add_settings_field(
+        'background_gradient_color_mid',
+        __('Couleur intermédiaire dégradé de fond', 'wp_scroll_customizer'),
+        'wp_scroll_customizer_background_gradient_color_mid_render',
+        'wpScrollCustomizer_background',
+        'wp_scroll_customizer_section_background'
+    );
 
     add_settings_field(
         'background_gradient_color_end',
         __('Couleur de fin du dégradé de fond', 'wp_scroll_customizer'),
         'wp_scroll_customizer_background_gradient_color_end_render',
+        'wpScrollCustomizer_background',
+        'wp_scroll_customizer_section_background'
+    );
+    add_settings_field(
+        'background_gradient_orientation',
+        __('Orientation du dégradé', 'wp_scroll_customizer'),
+        'wp_scroll_customizer_background_gradient_orientation_render',
+        'wpScrollCustomizer_background',
+        'wp_scroll_customizer_section_background'
+    );
+    add_settings_field(
+        'background_gradient_reversed',
+        __('Inverser le dégradé', 'wp_scroll_customizer'),
+        'wp_scroll_customizer_background_gradient_reversed_render',
         'wpScrollCustomizer_background',
         'wp_scroll_customizer_section_background'
     );

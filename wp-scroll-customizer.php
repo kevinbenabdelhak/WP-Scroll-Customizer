@@ -3,7 +3,7 @@
  * Plugin Name: WP Scroll Customizer
  * Plugin URI: https://kevin-benabdelhak.fr/plugins/wp-scroll-customizer/
  * Description: Personnalisez la barre de défilement de votre site WordPress avec des couleurs, des dégradés et des styles personnalisés pour une meilleure intégration au design de votre site.
- * Version: 1.0
+ * Version: 1.1
  * Author: Kevin Benabdelhak
  * Author URI: https://kevin-benabdelhak.fr/
  */
